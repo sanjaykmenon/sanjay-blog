@@ -28,6 +28,10 @@ theme:
 
 plugins:
   - search
+  - blog 
+  - social:
+      cards_layout: default
+
 
 
 markdown_extensions:
