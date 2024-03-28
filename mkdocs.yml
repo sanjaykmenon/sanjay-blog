@@ -30,8 +30,8 @@ theme:
 plugins:
   - search
   - blog 
-  - social:
-      cards_layout: default
+  # - social:
+  #     cards_layout: default
 
 
 
