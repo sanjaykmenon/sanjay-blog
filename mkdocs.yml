@@ -1,4 +1,5 @@
 site_name: Sanjay Blog
+site_url: https://sanjaykmenon.github.io/sanjay-blog/
 theme:
   name: material
   features:
