@@ -2,7 +2,9 @@
 draft: False
 date: 2024-03-28
 categories:
-  - AWS, data engineering
+  - AWS
+  - data engineering
+  - cloudformation
 ---
 
 
