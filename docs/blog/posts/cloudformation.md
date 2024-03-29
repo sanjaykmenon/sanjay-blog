@@ -1,3 +1,14 @@
+---
+draft: False
+date: 2024-04-28
+slug: cloudformation
+categories:
+  - Personal
+authors:
+  - sanjay
+---
+
+
 # Cloudformation 
 
 I've been trying to setup a purely AWS based Data Engineering curriculum that folks can use to learn AWS in the DE space as I did not find anything myself.
