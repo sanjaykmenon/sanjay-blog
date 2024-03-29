@@ -2,7 +2,7 @@
 draft: False
 date: 2024-03-28
 categories:
-  - AWS
+  - AWS, data engineering
 ---
 
 
@@ -29,3 +29,8 @@ we will architect
 Option 2:  CSV File added to S3 Bucket --> S3 Event Created --> SQS --> Lambda Trigger to process CSV file.
 
 Option 2 is a better architected solution than Option 1. As to why, i leave that as an exercise to the reader.
+
+An issue i've faced is that for now I'd used one cloudformation template for all of these infrastructure. Because an s3 event is resource property of a Bucket resource, and it needs to be pointed to an SQS we have a problem. Since the SQS itself is being created in the CFN template, Cloudformation is not able to recognize the ARN of the SQS (understandably). This isn't good design. A possible option is to have the SQS created separately in another CFT first, and then deploy the stack for the buckets so that CFN can get the ARN for the SQS.
+
+The other option would be exploring the Stack Sets approach. I'm trying to ensure that I have a uniform deployment process for setting up this infrastructure from a production standpoint. If I were to have to separate CFTs for the SQS and the S3 Bucket, then my deployment pipeline needs to be setup in a way that the order of resource creation is always maintained. This is tech debt? Using StackSets means i'd define the CFTs and have them stored in S3 and then just define the Stack in a single CFT YAML. More to look into tomorrow, if I'm not doing LLM stuff.
+
