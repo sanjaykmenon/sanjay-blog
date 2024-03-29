@@ -1,9 +1,8 @@
 ---
 draft: False
-date: 2024-04-28
-slug: cloudformation
+date: 2024-03-28
 categories:
-  - Personal
+  - AWS
 ---
 
 
@@ -25,7 +24,7 @@ The following resources are required.
 
 Option 1:  CSV File added to S3 bucket --> S3 Event Created --> Lambda Trigger to process CSV file
 
- is 
+we will architect
 
 Option 2:  CSV File added to S3 Bucket --> S3 Event Created --> SQS --> Lambda Trigger to process CSV file.
 
