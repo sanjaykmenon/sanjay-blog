@@ -4,8 +4,6 @@ date: 2024-04-28
 slug: cloudformation
 categories:
   - Personal
-authors:
-  - sanjay
 ---
 
 
