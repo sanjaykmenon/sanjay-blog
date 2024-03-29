@@ -1,17 +1,7 @@
 # Data Ramblings
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Hey! Sanjay here. This is my infiniteth attempt at blogging.
+I'm a data engineer with a recently developed interest in LLMs.
+I spend my time between working on data and AWS in finance.
+I'm trying to use this blog as a journal to help me document my learnings!
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
